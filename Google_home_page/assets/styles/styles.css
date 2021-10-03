@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    font-family: arial, sans-serif;
+    font-size: 0.9em;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerNav {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin-right: 10px;
+}
+
+ul > a, ul > img {
+    padding: 0 8px;
+}
+
+.headerImg:hover {
+    box-shadow: 0 0 10px 0 gainsboro;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
+h1 {
+    font-family: Product Sans;
+    font-size: 5.5em;
+}
+
+.InputZone {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 30px;
+    border: 1px solid gainsboro;
+    border-radius: 20px;
+}
+
+.InputZone:hover {
+    box-shadow: 0 0 10px 0 gainsboro;
+}
+
+.InputZone > input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+.twobutton {
+    padding-top: 30px;
+
+}
+
+button {
+    background-color: #F8F9FA;
+    border-radius: 5px;
+    border: none;
+    height: 36px;
+    padding: 0 20px;
+    margin: 0 4px;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 gainsboro;
+}
+
+footer {
+    background-color: #F2F2F2;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+#gris {
+    color: #70757A;
+}
+
+#footergauche {
+    display: flex;
+    justify-self: start;
+    padding-left: 20px;
+    align-items: center;
+}
+
+#footerdroite {
+    display: flex;
+    justify-self: end;
+    margin-right: 20px;
+    align-items: center;
+}
+
+@media (max-width: 1040px) {
+
+    #footerN {
+        flex-direction: column;
+    }
+
+    #footergauche {
+        justify-content: center;
+    }
+
+    #footerdroite {
+        justify-content: center;
+    }
+    
+}
+
+@media (max-width: 630px) {
+
+    .InputZone {
+        width: 95vw;
+    }
+
+}
+
+@media (max-height: 522px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    section {
+        margin-bottom: 20px;
+    }
+
+    footer {
+        position: relative;
+    }
+
+}
+
+@media (max-height: 570px) and (max-width: 1040px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    section {
+        margin-bottom: 13px;
+    }
+
+    footer {
+        position: relative;
+    }
+
+}
